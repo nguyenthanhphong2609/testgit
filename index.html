@@ -172,7 +172,44 @@
                 </ul>
             </div>    
         </div>
-        <div class="ourteacher">
+                <div class="container">
+            <div class="heading">
+                <span>
+                    <i class="fa fa-star"></i>
+                </span>
+                <h2>OUR INSTRUCTORS</h2>
+                <p>MEET OUR PROFESSIONAL INSTRUCTORS</p>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:30,
+                    nav:true,
+                    autoplay:true,
+                    autoplayTimeout:4000,
+                    autoplayHoverPause:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        300:{
+                            items:1
+                        },
+                        500:{
+                            items:2
+                        },
+                        750:{
+                            items:3
+                        },
+                        1100:{
+                            items:4
+                        }
+                    }
+                    })
+                });
+            </script>
+            <div class="ourteacher">
                 <div class="owl-carousel owl-theme">
                     <div class="teacher-item">
                         <div class="teacher-avatar">
@@ -429,6 +466,6 @@
                     </div>
                 </div>
             </div>
-	</div>
+        </div>
     </body>
 </html>
